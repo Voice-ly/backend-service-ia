@@ -34,6 +34,6 @@ jobs:
         with:
           context:
           push: true
-          tags: emaleal/voice.ly:latest
-          cache-from: type=registry,ref=emaleal/voice.ly:latest
+          tags: emaleal/voicely-ia:latest
+          cache-from: type=registry,ref=emaleal/voicely-ia:latest
           cache-to: type=inline
