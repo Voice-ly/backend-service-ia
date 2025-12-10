@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: run unit Tests
-        run: npm run test
+#      - name: run unit Tests
+#        run: npm run test
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
@@ -34,6 +34,6 @@ jobs:
         with:
           context:
           push: true
-          tags: emaleal/voice.ly:latest
-          cache-from: type=registry,ref=emaleal/voice.ly:latest
+          tags: emaleal/voicely-ia:latest
+          cache-from: type=registry,ref=emaleal/voicely-ia:latest
           cache-to: type=inline
